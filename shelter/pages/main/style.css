@@ -171,8 +171,56 @@ h6 {
   font-size: 14px;
 }
 
+.container {
+  width: 62.5vw;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*
+ * First screen
+ */
 .header-container {
   background: url(../../assets/images/noise_lines_transparent.png),
     radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
   height: 100vh;
+}
+
+.header-container__container {
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6vh;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo__title {
+  font-family: var(--logo-title-ff);
+  font-weight: var(--logo-title-fw);
+  font-style: var(--logo-title-fs);
+  font-size: var(--logo-title-fsz);
+  line-height: var(--logo-title-lh);
+  letter-spacing: var(--logo-title-ls);
+  color: var(--color-primary);
+}
+
+
+.logo__subtitle {
+  font-family: var(--logo-subtitle-ff);
+  font-weight: var(--logo-subtitle-fw);
+  font-style: var(--logo-subtitle-fs);
+  font-size: var(--logo-subtitle-fsz);
+  line-height: var(--logo-subtitle-lh);
+  letter-spacing: var(--logo-subtitle-ls);
+  color: var(--color-primary);
 }
