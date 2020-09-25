@@ -214,7 +214,6 @@ h6 {
   color: var(--color-primary);
 }
 
-
 .logo__subtitle {
   font-family: var(--logo-subtitle-ff);
   font-weight: var(--logo-subtitle-fw);
@@ -223,4 +222,27 @@ h6 {
   line-height: var(--logo-subtitle-lh);
   letter-spacing: var(--logo-subtitle-ls);
   color: var(--color-primary);
+}
+
+.menu {
+  flex: 0 1 50%;
+}
+
+.menu-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-list__item--current {
+  color: var(--color-light-s);
+  border-bottom: 3px solid var(--color-primary);
+}
+
+.menu-list__link {
+  font-family: var(--paragraph-l-ff);
+  font-weight: var(--paragraph-l-fw);
+  font-size: var(--paragraph-l-fsz);
+  line-height: var(--paragraph-l-lh);
+  color: var(--color-dark-s);
 }
