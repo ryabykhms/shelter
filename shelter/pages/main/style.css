@@ -210,6 +210,31 @@ h6 {
   letter-spacing: var(--btn-ls);
 }
 
+.paragraph-l {
+  font-family: var(--paragraph-l-ff);
+  font-weight: var(--paragraph-l-fw);
+  font-style: var(--paragraph-l-fs);
+  font-size: var(--paragraph-l-fsz);
+  line-height: var(--paragraph-l-lh);
+}
+
+.h2-title {
+  font-family: var(--h2-ff);
+  font-weight: var(--h2-fw);
+  font-style: var(--h2-fs);
+  font-size: var(--h2-fsz);
+  line-height: var(--h2-lh);
+}
+
+.h3-title {
+  font-family: var(--h3-ff);
+  font-weight: var(--h3-fw);
+  font-style: var(--h3-fs);
+  font-size: var(--h3-fsz);
+  line-height: var(--h3-lh);
+  letter-spacing: var(--h3-ls);
+}
+
 /*
  * First screen
  */
