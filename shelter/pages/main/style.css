@@ -298,10 +298,6 @@ h6 {
 }
 
 .menu-list__link {
-  font-family: var(--paragraph-l-ff);
-  font-weight: var(--paragraph-l-fw);
-  font-size: var(--paragraph-l-fsz);
-  line-height: var(--paragraph-l-lh);
   color: var(--color-dark-s);
 }
 
@@ -324,20 +320,11 @@ h6 {
 }
 
 .utp__title {
-  font-family: var(--h2-ff);
-  font-weight: var(--h2-fw);
-  font-style: var(--h2-fs);
-  font-size: var(--h2-fsz);
-  line-height: var(--h2-lh);
   color: #fff;
   width: 80%;
 }
 
 .utp__subtitle {
-  font-family: var(--paragraph-l-ff);
-  font-weight: var(--paragraph-l-fw);
-  font-size: var(--paragraph-l-fsz);
-  line-height: var(--paragraph-l-lh);
   color: var(--color-dark-s);
   margin-top: 42px;
 
@@ -365,20 +352,10 @@ h6 {
 
 .about__title {
   width: 80%;
-  font-family: var(--h3-ff);
-  font-weight: var(--h3-fw);
-  font-style: var(--h3-fs);
-  font-size: var(--h3-fsz);
-  line-height: var(--h3-lh);
-  letter-spacing: var(--h3-ls);
   color: var(--color-dark-l);
 }
 
 .about__paragraph {
-  font-family: var(--paragraph-l-ff);
-  font-weight: var(--paragraph-l-fw);
-  font-size: var(--paragraph-l-fsz);
-  line-height: var(--paragraph-l-lh);
   color: var(--color-dark-xl);
   margin-top: 25px;
 }
