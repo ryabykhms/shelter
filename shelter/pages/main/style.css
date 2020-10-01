@@ -136,7 +136,7 @@ h6 {
   --h5-fs: normal;
   --h5-fsz: 1.07rem;
   --h5-lh: 110%;
-  --h5-ls: 0.13rem;
+  --h5-ls: 0.9px;
 
   --paragraph-l-ff: "Arial", sans-serif;
   --paragraph-l-fw: normal;
@@ -225,7 +225,6 @@ h6 {
 
 .button-flip {
   background-color: transparent;
-  /* padding: 15px; */
   padding-bottom: 3px;
   width: 52px;
   height: 52px;
@@ -277,6 +276,16 @@ h6 {
   line-height: var(--h4-lh);
   letter-spacing: var(--h4-ls);
   text-align: center;
+}
+
+.h5__title {
+  font-family: var(--h5-ff);
+  font-weight: var(--h5-fw);
+  font-style: var(--h5-fs);
+  font-size: var(--h5-fsz);
+  line-height: var(--h5-lh);
+  letter-spacing: var(--h5-ls);
+  color: var(--color-dark-l);
 }
 
 /*
@@ -475,6 +484,7 @@ h6 {
 
 .help__container {
   flex-direction: column;
+  padding-bottom: 45px;
 }
 
 .help__list {
@@ -489,7 +499,6 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* width: 20%; */
   text-align: center;
   margin-bottom: 55px;
 }
@@ -501,4 +510,49 @@ h6 {
 
 .help__name {
   margin-top: 30px;
+}
+
+/*
+ * Addition
+ */
+
+.addition {
+  background-color: var(--color-light-l);
+}
+
+.addition__container {
+  padding-top: 82px;
+}
+
+.addition__content {
+  width: 380px;
+  margin-left: 30px;
+}
+
+.addition__title {
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.addition__subtitle {
+  margin-bottom: 20px;
+}
+
+.donation-button {
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  border-radius: 9px;
+}
+
+.addition__description {
+  font-family: Arial;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--color-dark-m);
+}
+
+.donation-button__text {
+  margin-left: 11px;
 }
