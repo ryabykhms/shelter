@@ -198,6 +198,19 @@ h6 {
   flex-direction: column;
 }
 
+.button {
+  background-color: transparent;
+  padding: 15px 45px;
+  border: 2px solid var(--color-primary);
+  border-radius: 100px;
+  font-family: var(--btn-ff);
+  font-size: var(--btn-fsz);
+  font-weight: var(--btn-fw);
+  font-style: var(--btn-fs);
+  line-height: var(--btn-lh);
+  letter-spacing: var(--btn-ls);
+}
+
 .button-fill {
   background-color: var(--color-primary);
   padding: 15px 45px;
@@ -208,6 +221,26 @@ h6 {
   font-style: var(--btn-fs);
   line-height: var(--btn-lh);
   letter-spacing: var(--btn-ls);
+}
+
+.button-flip {
+  background-color: transparent;
+  /* padding: 15px; */
+  padding-bottom: 3px;
+  width: 52px;
+  height: 52px;
+  border: 2px solid var(--color-primary);
+  border-radius: 50%;
+  font-family: var(--btn-ff);
+  font-size: var(--btn-fsz);
+  font-weight: var(--btn-fw);
+  font-style: var(--btn-fs);
+  line-height: var(--btn-lh);
+  letter-spacing: var(--btn-ls);
+}
+
+.button-flip__image {
+  vertical-align: middle;
 }
 
 .paragraph-l {
@@ -233,6 +266,7 @@ h6 {
   font-size: var(--h3-fsz);
   line-height: var(--h3-lh);
   letter-spacing: var(--h3-ls);
+  color: var(--color-dark-l);
 }
 
 /*
@@ -359,3 +393,70 @@ h6 {
   color: var(--color-dark-xl);
   margin-top: 25px;
 }
+
+/*
+ * Our Friends Block
+ */
+
+.friends {
+  background-color: var(--color-light-l);
+}
+
+.friends__container {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.friends__title {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.friends__slider {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.friends__button {
+  margin: 0 auto;
+}
+
+.slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-light-s);
+  padding-bottom: 30px;
+}
+
+.slider__title {
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  color: var(--color-dark-l);
+  letter-spacing: 1.1px;
+  margin: 30px auto;
+}
+
+.slider__button {
+  padding: 13px 42px;
+}
+
+.slider__prev {
+  margin-right: -37px;
+}
+
+.slider__next {
+  margin-left: -37px;
+}
+
+
