@@ -141,7 +141,7 @@ h6 {
   --paragraph-l-ff: "Arial", sans-serif;
   --paragraph-l-fw: normal;
   --paragraph-l-fs: normal;
-  --paragraph-l-fsz: 1.07rem;
+  --paragraph-l-fsz: 15px;
   --paragraph-l-lh: 160%;
 
   --paragraph-s-ff: "Arial", sans-serif;
@@ -160,9 +160,9 @@ h6 {
   --logo-subtitle-ff: "Arial", sans-serif;
   --logo-subtitle-fw: normal;
   --logo-subtitle-fs: normal;
-  --logo-subtitle-fsz: 0.93rem;
-  --logo-subtitle-lh: 100%;
-  --logo-subtitle-ls: 0.1rem;
+  --logo-subtitle-fsz: 13px;
+  --logo-subtitle-lh: 130%;
+  --logo-subtitle-ls: 1.3px;
 
   --btn-ff: "Georgia", sans-serif;
   --btn-fw: normal;
@@ -180,7 +180,7 @@ h6 {
 }
 
 .container {
-  width: 62.5vw;
+  width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -210,12 +210,11 @@ h6 {
   position: absolute;
   z-index: 2;
   top: 0;
-  width: 100vw;
-  height: 6.6vh;
+  width: 100%;
 }
 
 .header__container {
-  margin-top: 6.6vh;
+  margin-top: 4.5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -225,6 +224,8 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  height: 60px;
 }
 
 .logo__title {
@@ -235,7 +236,6 @@ h6 {
   line-height: var(--logo-title-lh);
   letter-spacing: var(--logo-title-ls);
   color: var(--color-primary);
-  margin-bottom: 1.1vh;
 }
 
 .logo__subtitle {
@@ -245,17 +245,19 @@ h6 {
   font-size: var(--logo-subtitle-fsz);
   line-height: var(--logo-subtitle-lh);
   letter-spacing: var(--logo-subtitle-ls);
-  color: var(--color-primary);
+  color: #fff;
+  padding-left: 4px;
 }
 
 .menu {
-  flex: 0 1 31.64rem;
+  flex: 0 1 443px;
 }
 
 .menu-list {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+  padding-bottom: 2px;
 }
 
 .menu-list__item--current {
@@ -273,22 +275,20 @@ h6 {
 
 .hero {
   position: relative;
-  height: 100vh;
-  width: 100vw;
+  width: 100%;
   background: url(../../assets/images/noise_lines_transparent.png),
     radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
 }
 
 .hero__container {
   align-items: center;
-  height: 80vh;
-  margin-top: 19.823vh;
+  margin-top: 180px;
   justify-content: flex-start;
 }
 
 .utp {
-  width: 24vw;
-  padding-bottom: 9vh;
+  width: 460px;
+  padding-bottom: 80px;
 }
 
 .utp__title {
@@ -307,16 +307,17 @@ h6 {
   font-size: var(--paragraph-l-fsz);
   line-height: var(--paragraph-l-lh);
   color: var(--color-dark-s);
-  margin-top: 4.625vh;
+  margin-top: 42px;
+
 }
 
 .utp__button {
-  margin-top: 4.625vh;
+  margin-top: 42px;
 }
 
 .hero__image {
   width: auto;
   height: 100%;
   align-self: flex-end;
-  margin-left: 2.187vw;
+  margin-left: 42px;
 }
