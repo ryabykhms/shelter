@@ -211,6 +211,11 @@ h6 {
   letter-spacing: var(--btn-ls);
 }
 
+.button:hover {
+  background-color: var(--color-primary-light);
+  cursor: pointer;
+}
+
 .button-fill {
   background-color: var(--color-primary);
   padding: 15px 45px;
@@ -221,6 +226,10 @@ h6 {
   font-style: var(--btn-fs);
   line-height: var(--btn-lh);
   letter-spacing: var(--btn-ls);
+}
+
+.button-fill:hover {
+  background-color: var(--color-primary-light);
 }
 
 .button-flip {
@@ -236,6 +245,10 @@ h6 {
   font-style: var(--btn-fs);
   line-height: var(--btn-lh);
   letter-spacing: var(--btn-ls);
+}
+
+.button-flip:hover {
+  background-color: var(--color-primary-light);
 }
 
 .button-flip__image {
@@ -354,6 +367,11 @@ h6 {
   color: var(--color-dark-s);
 }
 
+.menu-list__link:hover {
+  border: none;
+  color: var(--color-light-s);
+}
+
 .hero {
   position: relative;
   width: 100%;
@@ -452,6 +470,11 @@ h6 {
   justify-content: space-between;
   background-color: var(--color-light-s);
   padding-bottom: 30px;
+}
+
+.slider__item:hover {
+  cursor: pointer;
+  background-color: var(--color-light-s);
 }
 
 .slider__title {
@@ -612,6 +635,11 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: baseline;
+}
+
+.link:hover {
+  border: none;
+  color: var(--color-light-s);
 }
 
 .link__text {
