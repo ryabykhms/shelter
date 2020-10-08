@@ -23,6 +23,10 @@ h5 {
   @extend %font-h5;
 }
 
+p {
+  @extend %font-paragraph-l
+}
+
 .main {
   display: flex;
   flex-direction: column;
