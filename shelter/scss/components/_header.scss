@@ -1,0 +1,17 @@
+.header {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  width: 100%;
+}
+
+.header__wrapper {
+  margin-top: 4.5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__menu {
+  flex: 0 1 443px;
+}
