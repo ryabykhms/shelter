@@ -1,0 +1,62 @@
+.footer {
+  background: url(../../assets/images/noise_lines_transparent.png),
+    radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%),
+    #211f20;
+}
+
+.footer__wrapper {
+  padding-top: 40px;
+}
+
+.footer__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 25%;
+  padding-top: 16px;
+}
+
+.footer__image {
+  height: 310px;
+  width: auto;
+  display: inline-block;
+  align-self: flex-end;
+}
+
+.footer__title {
+  color: #fff;
+}
+
+.footer__link {
+  font-size: 20px;
+  color: $color-primary;
+  text-align: left;
+}
+
+.contacts__link {
+  margin-top: 40px;
+}
+
+.location__link {
+  margin-top: 34px;
+}
+
+.footer__location {
+  margin-left: -25px;
+}
+
+.link {
+  @extend %font-h4;
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+}
+
+.link:hover {
+  border: none;
+  color: $color-light-s;
+}
+
+.link__text {
+  margin-left: 20px;
+}
