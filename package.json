@@ -4,7 +4,7 @@
   "description": "Private repository for @ryabykhms",
   "main": "index.js",
   "scripts": {
-    "shelter": "sass --watch scss/pages/main.scss:pages/main/style.css scss/pages/pets.scss:pages/pets/style.css",
+    "shelter": "sass --watch shelter/scss/pages/main.scss:shelter/pages/main/style.css shelter/scss/pages/pets.scss:shelter/pages/pets/style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

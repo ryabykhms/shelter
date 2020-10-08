@@ -1,18 +1,18 @@
-@import "base/normalize";
+@import "../base/normalize";
 
 // Abstract
-@import "abstract/constants";
-@import "abstract/placeholders";
-@import "abstract/mixins";
+@import "../abstract/constants";
+@import "../abstract/placeholders";
+@import "../abstract/mixins";
 
 // Base
-@import "base/base";
-@import "base/logo";
-@import "base/buttons";
+@import "../base/base";
+@import "../base/logo";
+@import "../base/buttons";
 
 // Components
-@import "components/header";
-@import "components/menu";
+@import "../components/header";
+@import "../components/menu";
 
 .content__container {
   padding-top: 80px;
