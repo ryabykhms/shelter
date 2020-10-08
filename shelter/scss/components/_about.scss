@@ -1,8 +1,5 @@
 .about__wrapper {
-  padding-top: 80px;
-  padding-bottom: 100px;
-  align-items: center;
-  justify-content: center;
+  @extend %content-wrapper;
 }
 
 .about__content {

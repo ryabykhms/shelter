@@ -15,6 +15,7 @@
 %font-h3 {
   @include font($size: 3.5rem, $height: 4.5rem);
   letter-spacing: 0.21rem;
+  color: $color-dark-l;
 }
 
 %font-h4 {
@@ -50,6 +51,13 @@
 
 %font-btn {
   @extend %font-prime;
-  @include font($size: 1.7rem, $height: 2.2rem);
+  @include font($size: 1.7rem, $height: 2rem);
   letter-spacing: 0.075rem;
+}
+
+%content-wrapper {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  align-items: center;
+  justify-content: center;
 }

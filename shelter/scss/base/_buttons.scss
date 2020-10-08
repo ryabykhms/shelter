@@ -11,4 +11,16 @@
   &--filled {
     background-color: $color-primary;
   }
+  &--flipped {
+    background-color: transparent;
+    padding: 0;
+    padding-bottom: 3px;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+  }
+}
+
+.button__image {
+  vertical-align: middle;
 }

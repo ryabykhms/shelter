@@ -18,6 +18,8 @@
 @import "../components/menu";
 @import "../components/hero";
 @import "../components/about";
+@import "../components/friends";
+@import "../components/slider";
 
 // .content__container {
 //   padding-top: 80px;
@@ -39,22 +41,6 @@
 //   font-style: var(--btn-fs);
 //   line-height: var(--btn-lh);
 //   letter-spacing: var(--btn-ls);
-// }
-
-// .button-flip:hover {
-//   background-color: var(--color-primary-light);
-// }
-
-// .button-flip__image {
-//   vertical-align: middle;
-// }
-
-// .paragraph-l {
-//   font-family: var(--paragraph-l-ff);
-//   font-weight: var(--paragraph-l-fw);
-//   font-style: var(--paragraph-l-fs);
-//   font-size: var(--paragraph-l-fsz);
-//   line-height: var(--paragraph-l-lh);
 // }
 
 // .h2-title {
@@ -95,28 +81,6 @@
 //   color: var(--color-dark-l);
 // }
 
-// /*
-//  * First screen
-//  */
-
-// /*
-//  * About Block
-//  */
-
-// .about__content {
-//   width: 430px;
-//   margin-left: 120px;
-// }
-
-// .about__title {
-//   width: 80%;
-//   color: var(--color-dark-l);
-// }
-
-// .about__paragraph {
-//   color: var(--color-dark-xl);
-//   margin-top: 25px;
-// }
 
 // /*
 //  * Our Friends Block
