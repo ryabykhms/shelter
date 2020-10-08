@@ -1,5 +1,5 @@
 .about__wrapper {
-  @extend %content-wrapper;
+  @include content-wrapper();
 }
 
 .about__content {

@@ -1,5 +1,5 @@
 .help__wrapper {
-  @extend %content-wrapper;
+  @include content-wrapper();
   flex-direction: column;
   padding-bottom: 45px;
 }

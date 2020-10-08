@@ -21,86 +21,8 @@
 @import "../components/friends";
 @import "../components/slider";
 @import "../components/help";
+@import "../components/donation";
 
-// /*
-//  * Help Block
-//  */
-
-// .help__container {
-//   flex-direction: column;
-//   padding-bottom: 45px;
-// }
-
-// .help__list {
-//   display: flex;
-//   flex-wrap: wrap;
-//   justify-content: center;
-//   align-items: center;
-//   column-gap: 11.6%;
-// }
-
-// .help__item {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   text-align: center;
-//   margin-bottom: 55px;
-// }
-
-// .help__title {
-//   text-align: center;
-//   margin-bottom: 60px;
-// }
-
-// .help__name {
-//   margin-top: 30px;
-// }
-
-// /*
-//  * Addition
-//  */
-
-// .addition {
-//   background-color: var(--color-light-l);
-//   padding-bottom: 1px;
-// }
-
-// .addition__container {
-//   padding-top: 82px;
-// }
-
-// .addition__content {
-//   width: 380px;
-//   margin-left: 30px;
-// }
-
-// .addition__title {
-//   width: 80%;
-//   margin-bottom: 20px;
-// }
-
-// .addition__subtitle {
-//   margin-bottom: 20px;
-// }
-
-// .donation-button {
-//   margin-bottom: 20px;
-//   padding: 10px 15px;
-//   border-radius: 9px;
-// }
-
-// .addition__description {
-//   font-family: Arial;
-//   font-style: italic;
-//   font-weight: normal;
-//   font-size: 12px;
-//   line-height: 18px;
-//   color: var(--color-dark-m);
-// }
-
-// .donation-button__text {
-//   margin-left: 11px;
-// }
 
 // /*
 //  * Footer

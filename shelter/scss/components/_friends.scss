@@ -3,7 +3,7 @@
 }
 
 .friends__wrapper {
-  @extend %content-wrapper;
+  @include content-wrapper();
   flex-direction: column;
   align-items: stretch;
 }
