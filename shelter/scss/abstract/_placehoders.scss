@@ -1,5 +1,12 @@
-%font-h2 {
+%font-prime {
   font-family: "Georgia", Verdana, sans-serif;
+}
+
+%font-add {
+  font-family: "Arial", Verdana, sans-serif;
+}
+
+%font-h2 {
   font-weight: normal;
   font-style: normal;
   font-size: 3.14rem;
@@ -7,7 +14,6 @@
 }
 
 %font-h3 {
-  font-family: "Georgia", Verdana, sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 2.5rem;
@@ -16,7 +22,6 @@
 }
 
 %font-h4 {
-  font-family: "Georgia", Verdana, sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 1.43rem;
@@ -25,7 +30,6 @@
 }
 
 %font-h5 {
-  font-family: "Georgia", Verdana, sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 1.07rem;
@@ -34,7 +38,7 @@
 }
 
 %font-paragraph-l {
-  font-family: "Arial", Verdana, sans-serif;
+  @extend %font-add;
   font-weight: normal;
   font-style: normal;
   font-size: 15px;
@@ -42,7 +46,7 @@
 }
 
 %font-paragraph-s {
-  font-family: "Arial", Verdana, sans-serif;
+  @extend %font-add;
   font-weight: normal;
   font-style: italic;
   font-size: 0.86rem;
@@ -50,7 +54,6 @@
 }
 
 %font-logo-title {
-  font-family: "Georgia", Verdana, sans-serif;
   font-weight: normal;
   font-style: italic;
   font-size: 2.29rem;
@@ -59,7 +62,7 @@
 }
 
 %font-logo-subtitle {
-  font-family: "Arial", Verdana, sans-serif;
+  @extend %font-add;
   font-weight: normal;
   font-style: normal;
   font-size: 13px;
@@ -68,7 +71,7 @@
 }
 
 %font-btn {
-  font-family: "Georgia", Verdana, sans-serif;
+  @extend %font-prime;
   font-weight: normal;
   font-style: normal;
   font-size: 1.21rem;

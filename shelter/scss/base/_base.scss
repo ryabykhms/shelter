@@ -1,0 +1,24 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  @extend %font-prime;
+  @include font($size: 1.5rem, $height: 2.4rem);
+}
+
+h2 {
+  @extend %font-h2;
+}
+
+h3 {
+  @extend %font-h3;
+}
+
+h4 {
+  @extend %font-h4;
+}
+
+h5 {
+  @extend %font-h5;
+}
