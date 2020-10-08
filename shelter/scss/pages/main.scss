@@ -1,7 +1,8 @@
 /*
  * Reset default styles
  */
-* {
+
+ * {
   padding: 0;
   margin: 0;
   border: 0;
@@ -108,52 +109,61 @@ h6 {
   --color-primary: #f1cdb3;
   --color-primary-light: #fddcc4;
   --text-color: #c4c4c4;
+
   /* Text */
   --h2-ff: "Georgia", sans-serif;
   --h2-fw: normal;
   --h2-fs: normal;
   --h2-fsz: 3.14rem;
   --h2-lh: 130%;
+
   --h3-ff: "Georgia", sans-serif;
   --h3-fw: normal;
   --h3-fs: normal;
   --h3-fsz: 2.5rem;
   --h3-lh: 130%;
   --h3-ls: 0.15rem;
+
   --h4-ff: "Georgia", sans-serif;
   --h4-fw: normal;
   --h4-fs: normal;
   --h4-fsz: 1.43rem;
   --h4-lh: 115%;
   --h4-ls: 1.1px;
+
   --h5-ff: "Georgia", sans-serif;
   --h5-fw: normal;
   --h5-fs: normal;
   --h5-fsz: 1.07rem;
   --h5-lh: 110%;
   --h5-ls: 0.9px;
+
   --paragraph-l-ff: "Arial", sans-serif;
   --paragraph-l-fw: normal;
   --paragraph-l-fs: normal;
   --paragraph-l-fsz: 15px;
   --paragraph-l-lh: 160%;
+
   --paragraph-s-ff: "Arial", sans-serif;
   --paragraph-s-fw: normal;
   --paragraph-s-fs: italic;
   --paragraph-s-fsz: 0.86rem;
   --paragraph-s-lh: 150%;
+
   --logo-title-ff: "Georgia", sans-serif;
   --logo-title-fw: normal;
   --logo-title-fs: normal;
   --logo-title-fsz: 2.29rem;
   --logo-title-lh: 110%;
   --logo-title-ls: 0.13rem;
+
   --logo-subtitle-ff: "Arial", sans-serif;
   --logo-subtitle-fw: normal;
   --logo-subtitle-fs: normal;
   --logo-subtitle-fsz: 13px;
   --logo-subtitle-lh: 130%;
   --logo-subtitle-ls: 1.3px;
+
   --btn-ff: "Georgia", sans-serif;
   --btn-fw: normal;
   --btn-fs: normal;
@@ -365,7 +375,8 @@ h6 {
 .hero {
   position: relative;
   width: 100%;
-  background: url(../../assets/images/noise_lines_transparent.png), radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
+  background: url(../../assets/images/noise_lines_transparent.png),
+    radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
 }
 
 .hero__container {
@@ -403,6 +414,7 @@ h6 {
 /*
  * About Block
  */
+
 .about__content {
   width: 430px;
   margin-left: 120px;
@@ -421,6 +433,7 @@ h6 {
 /*
  * Our Friends Block
  */
+
 .friends {
   background-color: var(--color-light-l);
 }
@@ -490,6 +503,7 @@ h6 {
 /*
  * Help Block
  */
+
 .help__container {
   flex-direction: column;
   padding-bottom: 45px;
@@ -523,6 +537,7 @@ h6 {
 /*
  * Addition
  */
+
 .addition {
   background-color: var(--color-light-l);
   padding-bottom: 1px;
@@ -568,8 +583,11 @@ h6 {
 /*
  * Footer
  */
+
 .footer {
-  background: url(../../assets/images/noise_lines_transparent.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%), #211f20;
+  background: url(../../assets/images/noise_lines_transparent.png),
+    radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%),
+    #211f20;
 }
 
 .footer__container {
@@ -627,5 +645,3 @@ h6 {
 .link__text {
   margin-left: 20px;
 }
-
-/*# sourceMappingURL=style.css.map */
