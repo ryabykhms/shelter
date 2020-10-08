@@ -8,7 +8,7 @@
 
 .logo__title {
   @extend %font-logo-title;
-  color: var(--color-primary);
+  color: $color-primary;
   &--dark {
     color: $color-dark-l;
   }
@@ -16,8 +16,8 @@
 
 .logo__subtitle {
   @extend %font-logo-subtitle;
-  color: #fff;
-  padding-left: 4px;
+  color: $color-light-xl;
+  padding-left: 2px;
   &--dark {
     color: $color-dark-3xl;
   }

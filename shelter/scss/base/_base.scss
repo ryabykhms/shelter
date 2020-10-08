@@ -22,3 +22,8 @@ h4 {
 h5 {
   @extend %font-h5;
 }
+
+.main {
+  display: flex;
+  flex-direction: column;
+}

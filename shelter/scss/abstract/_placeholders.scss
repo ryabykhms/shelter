@@ -1,3 +1,5 @@
+@import "mixins.scss";
+
 %font-prime {
   font-family: "Georgia", Verdana, sans-serif;
 }
@@ -7,74 +9,47 @@
 }
 
 %font-h2 {
-  font-weight: normal;
-  font-style: normal;
-  font-size: 3.14rem;
-  line-height: 130%;
+  @include font($size: 4.4rem, $height: 5.7rem);
 }
 
 %font-h3 {
-  font-weight: normal;
-  font-style: normal;
-  font-size: 2.5rem;
-  line-height: 130%;
-  letter-spacing: 0.15rem;
+  @include font($size: 3.5rem, $height: 4.5rem);
+  letter-spacing: 0.6rem;
 }
 
 %font-h4 {
-  font-weight: normal;
-  font-style: normal;
-  font-size: 1.43rem;
-  line-height: 115%;
-  letter-spacing: 1.1px;
+  @include font($size: 2rem, $height: 2.3rem);
+  letter-spacing: 0.6rem;
 }
 
 %font-h5 {
-  font-weight: normal;
-  font-style: normal;
-  font-size: 1.07rem;
-  line-height: 110%;
-  letter-spacing: 0.9px;
+  @include font($size: 1.5rem, $height: 1.65rem);
+  letter-spacing: 0.1rem;
 }
 
 %font-paragraph-l {
   @extend %font-add;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 15px;
-  line-height: 160%;
+  @include font($size: 1.5rem, $height: 2.4rem);
 }
 
 %font-paragraph-s {
   @extend %font-add;
-  font-weight: normal;
-  font-style: italic;
-  font-size: 0.86rem;
-  line-height: 150%;
+  @include font($size: 1.2rem, $height: 1.8rem, $style: italic);
 }
 
 %font-logo-title {
-  font-weight: normal;
-  font-style: italic;
-  font-size: 2.29rem;
-  line-height: 110%;
-  letter-spacing: 0.13rem;
+  @include font($size: 3.2rem, $height: 3.8rem);
+  letter-spacing: 0.2rem;
 }
 
 %font-logo-subtitle {
   @extend %font-add;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 13px;
-  line-height: 130%;
-  letter-spacing: 1.3px;
+  @include font($size: 1.3rem, $height: 1.3rem);
+  letter-spacing: 0.13rem;
 }
 
 %font-btn {
   @extend %font-prime;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 1.21rem;
-  line-height: 130%;
+  @include font($size: 1.7rem, $height: 2.2rem);
   letter-spacing: 0.075rem;
 }

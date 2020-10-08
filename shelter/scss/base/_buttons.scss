@@ -1,0 +1,14 @@
+.button {
+  @extend %font-btn;
+  background-color: transparent;
+  padding: 15px 45px;
+  border: 2px solid $color-primary;
+  border-radius: 100px;
+  &:hover {
+    background-color: $color-primary-light;
+    cursor: pointer;
+  }
+  &--filled {
+    background-color: $color-primary;
+  }
+}

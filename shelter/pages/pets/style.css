@@ -88,7 +88,7 @@ h6 {
   font-weight: 400;
 }
 
-body {
+body, .button {
   font-family: "Georgia", Verdana, sans-serif;
 }
 
@@ -143,6 +143,14 @@ h5 {
   letter-spacing: 1.3px;
 }
 
+.button {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.21rem;
+  line-height: 130%;
+  letter-spacing: 0.075rem;
+}
+
 html {
   font-size: 10px;
 }
@@ -152,6 +160,11 @@ body {
   font-style: normal;
   font-weight: normal;
   line-height: 2.4rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
 }
 
 .logo {
@@ -175,6 +188,27 @@ body {
 }
 .logo__subtitle--dark {
   color: #292929;
+}
+
+.button {
+  background-color: transparent;
+  padding: 15px 45px;
+  border: 2px solid #f1cdb3;
+  border-radius: 100px;
+}
+.button:hover {
+  background-color: #fddcc4;
+  cursor: pointer;
+}
+.button--filled {
+  background-color: #f1cdb3;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
