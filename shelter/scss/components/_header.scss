@@ -3,10 +3,13 @@
   z-index: 2;
   top: 0;
   width: 100%;
+  padding: 30px 0;
+  &--relative {
+    position: relative;
+  }
 }
 
 .header__wrapper {
-  margin-top: 4.5%;
   display: flex;
   justify-content: space-between;
   align-items: center;

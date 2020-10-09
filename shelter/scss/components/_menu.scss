@@ -18,4 +18,10 @@
   &:hover {
     color: $color-light-s;
   }
+  &--dark {
+    color: $color-dark-l;
+  }
+  &--active-dark {
+    color: $color-dark-3xl;
+  }
 }
