@@ -5,6 +5,12 @@
   line-height: $height;
 }
 
+@mixin icons($width, $height, $url) {
+  background-image: url($url);
+  width: $width;
+  height: $height;
+}
+
 @mixin content-wrapper() {
   padding-top: 80px;
   padding-bottom: 100px;

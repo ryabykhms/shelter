@@ -8,16 +8,20 @@
     background-color: $color-primary-light;
     cursor: pointer;
   }
-  &--filled {
-    background-color: $color-primary;
-  }
-  &--flipped {
+  &--squared {
     background-color: transparent;
     padding: 0;
     padding-bottom: 3px;
     width: 52px;
     height: 52px;
     border-radius: 50%;
+  }
+  &--filled {
+    background-color: $color-primary;
+  }
+  &--inactive {
+    border-color: $color-dark-s;
+    color: $color-dark-s;
   }
 }
 

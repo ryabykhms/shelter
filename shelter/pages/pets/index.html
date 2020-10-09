@@ -19,7 +19,8 @@
       <nav class="header__menu">
         <ul class="menu">
           <li class="menu__item"><a class="menu__link  menu__link--dark" href="#">About the shelter</a></li>
-          <li class="menu__item menu__item--active"><a class="menu__link menu__link--active-dark" href="#">Our pets</a></li>
+          <li class="menu__item menu__item--active"><a class="menu__link menu__link--active-dark" href="#">Our pets</a>
+          </li>
           <li class="menu__item"><a class="menu__link  menu__link--dark" href="#">Help the shelter</a></li>
           <li class="menu__item"><a class="menu__link  menu__link--dark" href="#">Contacts</a></li>
         </ul>
@@ -33,8 +34,8 @@
           Our friends who <br>
           are looking for a house
         </h3>
-        <div class="slider">
-          <div class="slider__list">
+        <div class="friends__slider">
+          <div class="slider__list slider">
             <div class="slider__item slide">
               <img src="../../assets/images/pets-katrine.png" alt="Katrine" class="slide__image">
               <h4 class="slide__title">Katrine</h4>
@@ -66,7 +67,7 @@
               <button class="button">Learn More</button>
             </div>
             <div class="slider__item slide">
-              <img src="../../assets/images/pets-scarlett.png" alt="Scarlett" class="slide__image">
+              <img src="../../assets/images/pets-scarlet.png" alt="Scarlett" class="slide__image">
               <h4 class="slide__title">Scarlett</h4>
               <button class="button">Learn More</button>
             </div>
@@ -76,12 +77,20 @@
               <button class="button">Learn More</button>
             </div>
           </div>
-          <div class="slider__pagination">
-            <button class="button button--squared button--inactive"><span class="icon icon--first"></span></button>
-            <button class="button button--squared button--inactive"><span class="icon icon--prev"></span></button>
-            <button class="button button--squared button--colored">1</button>
-            <button class="button button--squared"><span class="icon icon--next"></button>
-            <button class="button button--squared"><span class="icon icon--last"></button>
+          <div class="slider__pagination pagination">
+            <button class="button button--squared button--inactive pagination__button">
+              <span class="icon icon--first-inactive"></span>
+            </button>
+            <button class="button button--squared button--inactive pagination__button">
+              <span class="icon icon--prev-inactive"></span>
+            </button>
+            <button class="button button--squared button--filled pagination__button">1</button>
+            <button class="button button--squared pagination__button">
+              <span class="icon icon--next"></span>
+            </button>
+            <button class="button button--squared pagination__button">
+              <span class="icon icon--last"></span>
+            </button>
           </div>
         </div>
       </div>

@@ -210,10 +210,7 @@ body {
   background-color: #fddcc4;
   cursor: pointer;
 }
-.button--filled {
-  background-color: #f1cdb3;
-}
-.button--flipped {
+.button--squared {
   background-color: transparent;
   padding: 0;
   padding-bottom: 3px;
@@ -221,9 +218,69 @@ body {
   height: 52px;
   border-radius: 50%;
 }
+.button--filled {
+  background-color: #f1cdb3;
+}
+.button--inactive {
+  border-color: #cdcdcd;
+  color: #cdcdcd;
+}
 
 .button__image {
   vertical-align: middle;
+}
+
+.icon {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.icon--first {
+  background-image: url("../../assets/icons/icon-first.svg");
+  width: 25px;
+  height: 11px;
+}
+
+.icon--first-inactive {
+  background-image: url("../../assets/icons/icon-first-inactive.svg");
+  width: 25px;
+  height: 11px;
+}
+
+.icon--prev {
+  background-image: url("../../assets/icons/icon-prev.svg");
+  width: 10px;
+  height: 11px;
+}
+
+.icon--prev-inactive {
+  background-image: url("../../assets/icons/icon-prev-inactive.svg");
+  width: 10px;
+  height: 11px;
+}
+
+.icon--next {
+  background-image: url("../../assets/icons/icon-next.svg");
+  width: 10px;
+  height: 11px;
+}
+
+.icon--next-inactive {
+  background-image: url("../../assets/icons/icon-next-inactive.svg");
+  width: 10px;
+  height: 11px;
+}
+
+.icon--last {
+  background-image: url("../../assets/icons/icon-last.svg");
+  width: 25px;
+  height: 11px;
+}
+
+.icon--last-inactive {
+  background-image: url("../../assets/icons/icon-last-inactive.svg");
+  width: 25px;
+  height: 11px;
 }
 
 .wrapper {
@@ -310,6 +367,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .slider__item {
@@ -319,6 +377,7 @@ body {
   justify-content: space-between;
   background-color: #fafafa;
   padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 .slider__item:hover {
   cursor: pointer;
@@ -326,6 +385,16 @@ body {
 }
 
 .slider__title {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.3rem;
+  color: #545454;
+  letter-spacing: 0.11rem;
+  margin: 30px auto;
+}
+
+.slide__title {
   font-size: 2rem;
   font-style: normal;
   font-weight: 400;
@@ -345,6 +414,16 @@ body {
 
 .slider__next {
   margin-left: -37px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination__button:not(:first-child) {
+  margin-left: 20px;
 }
 
 .footer {

@@ -1,0 +1,35 @@
+.icon {
+  display: inline-block;
+  cursor: pointer;
+}
+.icon--first {
+  @include icons($width: 25px, $height: 11px, $url: "../../assets/icons/icon-first.svg");
+}
+
+.icon--first-inactive {
+  @include icons($width: 25px, $height: 11px, $url: "../../assets/icons/icon-first-inactive.svg");
+}
+
+.icon--prev {
+  @include icons($width: 10px, $height: 11px, $url: "../../assets/icons/icon-prev.svg");
+}
+
+.icon--prev-inactive {
+  @include icons($width: 10px, $height: 11px, $url: "../../assets/icons/icon-prev-inactive.svg");
+}
+
+.icon--next {
+  @include icons($width: 10px, $height: 11px, $url: "../../assets/icons/icon-next.svg");
+}
+
+.icon--next-inactive {
+  @include icons($width: 10px, $height: 11px, $url: "../../assets/icons/icon-next-inactive.svg");
+}
+
+.icon--last {
+  @include icons($width: 25px, $height: 11px, $url: "../../assets/icons/icon-last.svg");
+}
+
+.icon--last-inactive {
+  @include icons($width: 25px, $height: 11px, $url: "../../assets/icons/icon-last-inactive.svg");
+}
