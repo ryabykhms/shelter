@@ -443,8 +443,9 @@ body {
 }
 
 .footer__image {
+  width: 50%;
+  text-align: right;
   height: 310px;
-  width: auto;
   display: inline-block;
   align-self: flex-end;
 }
@@ -457,6 +458,24 @@ body {
   font-size: 20px;
   color: #f1cdb3;
   text-align: left;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__title {
+  color: #fff;
+}
+
+.contacts__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 40%;
+  padding-top: 16px;
+  align-items: flex-start;
 }
 
 .contacts__link {
@@ -484,6 +503,8 @@ body {
 
 .link__text {
   margin-left: 20px;
+  text-align: left;
+  color: #f1cdb3;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -17,8 +17,9 @@
 }
 
 .footer__image {
-  height: 310px;
-  width: auto;
+  width: 50%;
+  text-align: right;
+  height: auto;
   display: inline-block;
   align-self: flex-end;
 }
@@ -31,6 +32,24 @@
   font-size: 20px;
   color: $color-primary;
   text-align: left;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__title {
+  color: $color-light-xl;
+}
+
+.contacts__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 40%;
+  padding-top: 16px;
+  align-items: flex-start;
 }
 
 .contacts__link {
@@ -59,4 +78,6 @@
 
 .link__text {
   margin-left: 20px;
+  text-align: left;
+  color: $color-primary;
 }
