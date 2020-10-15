@@ -288,6 +288,16 @@ body {
   max-width: 1200px;
   margin: auto;
 }
+@media (max-width: 768px) {
+  .wrapper {
+    max-width: 708px;
+  }
+}
+@media (max-width: 320px) {
+  .wrapper {
+    max-width: 300px;
+  }
+}
 
 .header {
   position: absolute;
@@ -347,6 +357,11 @@ body {
   flex-direction: column;
   align-items: stretch;
 }
+@media (max-width: 768px) {
+  .friends__wrapper {
+    padding-bottom: 76px;
+  }
+}
 
 .friends__title {
   margin: 0 auto;
@@ -355,6 +370,11 @@ body {
 
 .friends__slider {
   margin-top: 60px;
+}
+@media (max-width: 768px) {
+  .friends__slider {
+    margin-top: 30px;
+  }
 }
 
 .friends__button {
@@ -366,6 +386,11 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .slider {
+    justify-content: center;
+  }
 }
 
 .slider__item {
@@ -381,9 +406,22 @@ body {
   cursor: pointer;
   background-color: #fafafa;
 }
+@media (max-width: 768px) {
+  .slider__item:nth-child(2n) {
+    margin-left: 40px;
+  }
+  .slider__item:nth-child(n+7) {
+    display: none;
+  }
+}
 
 .slider__list {
   padding-bottom: 30px;
+}
+@media (max-width: 768px) {
+  .slider__list {
+    padding-bottom: 10px;
+  }
 }
 
 .slider__title {
@@ -435,6 +473,12 @@ body {
 .footer__wrapper {
   padding-top: 40px;
 }
+@media (max-width: 768px) {
+  .footer__wrapper {
+    padding-top: 15px;
+    flex-wrap: wrap;
+  }
+}
 
 .footer__section {
   display: flex;
@@ -452,6 +496,17 @@ body {
   display: inline-block;
   align-self: flex-end;
 }
+@media (max-width: 768px) {
+  .footer__image {
+    width: auto;
+    margin: 64px auto 0;
+  }
+}
+
+.pets__image {
+  width: auto;
+  max-height: 310px;
+}
 
 .footer__title {
   color: #fff;
@@ -467,12 +522,17 @@ body {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 768px) {
+  .contacts {
+    justify-content: center;
+    width: 100%;
+  }
+}
 
 .contacts__title {
   color: #fff;
   width: 90%;
 }
-
 .contacts__item {
   display: flex;
   flex-direction: column;
@@ -482,6 +542,16 @@ body {
 }
 .contacts__item:not(:first-child) {
   padding-left: 93px;
+}
+@media (max-width: 768px) {
+  .contacts__item:not(:first-child) {
+    padding-left: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .contacts__item {
+    width: 45%;
+  }
 }
 
 .contacts__link {

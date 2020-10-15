@@ -3,6 +3,9 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  @include media-tablet {
+    justify-content: center;
+  }
 }
 
 .slider__item {
@@ -17,10 +20,21 @@
     cursor: pointer;
     background-color: $color-light-s;
   }
+  @include media-tablet {
+    &:nth-child(2n) {
+      margin-left: 40px;
+    }
+    &:nth-child(n+7) {
+      display: none;
+    }
+  }
 }
 
 .slider__list {
   padding-bottom: 30px;
+  @include media-tablet {
+    padding-bottom: 10px;
+  }
 }
 
 .slider__title {
