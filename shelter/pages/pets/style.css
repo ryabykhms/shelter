@@ -445,7 +445,7 @@ body {
 .footer__image {
   width: 50%;
   text-align: right;
-  height: 310px;
+  height: auto;
   display: inline-block;
   align-self: flex-end;
 }
