@@ -28,6 +28,12 @@
       display: none;
     }
   }
+  @include media-mobile-big {
+    &:nth-child(2n) {
+      display: none;
+      margin-left: 0;
+    }
+  }
 }
 
 .slider__list {
@@ -72,5 +78,8 @@
 .pagination__button {
   &:not(:first-child) {
     margin-left: 20px;
+    @include media-mobile-big {
+      margin-left: 10px;
+    }
   }
 }

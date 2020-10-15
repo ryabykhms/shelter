@@ -9,11 +9,18 @@
   @include media-tablet {
     padding-bottom: 76px;
   }
+  @include media-mobile-big {
+    padding-top: 42px;
+    padding-bottom: 44px;
+  }
 }
 
 .friends__title {
   margin: 0 auto;
   text-align: center;
+  @include media-mobile-big {
+    letter-spacing: 0.15rem;;
+  }
 }
 
 .friends__slider {
@@ -21,7 +28,9 @@
   @include media-tablet {
     margin-top: 30px;
   }
-  // margin-bottom: 60px;
+  @include media-mobile-big {
+    margin-top: 42px;
+  }
 }
 
 .friends__button {

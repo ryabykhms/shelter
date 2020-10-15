@@ -17,4 +17,7 @@
 
 .header__menu {
   flex: 0 1 443px;
+  @include media-tablet-small{
+    display: none;
+  }
 }

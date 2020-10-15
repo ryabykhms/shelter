@@ -10,6 +10,9 @@
     padding-top: 15px;
     flex-wrap: wrap;
   }
+  @include media-mobile-big {
+    flex-direction: column;
+  }
 }
 
 .footer__section {
@@ -31,11 +34,17 @@
     width: auto;
     margin: 64px auto 0;
   }
+  @include media-mobile-big {
+    width: auto;
+    margin: 90px auto 0;
+    height: 270px;
+  }
 }
 
 .pets__image {
   width: auto;
-  max-height: 310px;
+  max-height: 100%;
+
 }
 
 .footer__title {
@@ -55,13 +64,22 @@
     justify-content: center;
     width: 100%;
   }
+  @include media-mobile-big {
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+  }
 }
 
 .contacts__title {
   color: $color-light-xl;
   width: 90%;
-  @include media-tablet {
-    // width: 100%;
+  @include media-mobile-big {
+    @include font($size: 3.5rem, $height: 4.5rem);
+  }
+  @include media-mobile-big {
+    width: 100%;
+    text-align: center;
   }
 }
 
@@ -69,7 +87,6 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  // width: 40%;
   padding-top: 16px;
   align-items: flex-start;
   &:not(:first-child) {
@@ -81,6 +98,13 @@
   @include media-tablet {
     width: 45%;
   }
+  @include media-mobile-big {
+    width: 100%;
+    &:not(:first-child) {
+      margin-top: 24px;
+      margin-left: -9px;
+    }
+  }
 }
 
 .contacts__link {
@@ -89,6 +113,16 @@
 
 .location__link {
   margin-top: 33px;
+  @include media-mobile-big {
+    margin-left: -10px;
+    width: 300px;
+  }
+}
+
+.requisites__link {
+  @include media-mobile-big {
+    margin-left: 10px;
+  }
 }
 
 .footer__location {
