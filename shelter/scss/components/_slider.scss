@@ -19,6 +19,10 @@
   }
 }
 
+.slider__list {
+  padding-bottom: 30px;
+}
+
 .slider__title {
   @include font($size: 2rem, $height: 2.3rem);
   color: $color-dark-l;
