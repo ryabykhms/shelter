@@ -9,6 +9,10 @@
   align-items: center;
   margin-top: 180px;
   justify-content: flex-start;
+  @include media-tablet {
+    flex-direction: column;
+    margin-top: 150px;
+  }
 }
 
 .hero__image {
@@ -16,11 +20,21 @@
   height: 100%;
   align-self: flex-end;
   margin-left: 42px;
+  @include media-tablet {
+    height: auto;
+    max-height: 593px;
+  }
 }
 
 .utp {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
   width: 460px;
   padding-bottom: 80px;
+  @include media-tablet {
+    padding-bottom: 100px;
+  }
 }
 
 .utp__title {
@@ -36,4 +50,7 @@
 
 .utp__button {
   margin-top: 42px;
+  @include media-tablet {
+    align-self: center;
+  }
 }
