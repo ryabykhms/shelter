@@ -5,11 +5,19 @@
 .donation__wrapper {
   @include content-wrapper();
   // padding-top: 82px;
+  @include media-tablet {
+    flex-direction: column;
+  }
 }
 
 .donation__content {
   width: 380px;
   margin-left: 30px;
+  @include media-tablet {
+    order: -1;
+    margin-left: 0;
+    padding-bottom: 58px;
+  }
 }
 
 .donation__title {
@@ -23,7 +31,7 @@
 
 .donation__button {
   margin-bottom: 20px;
-  padding: 10px 15px;
+  padding: 9px 15px;
   border-radius: 9px;
 }
 

@@ -626,10 +626,22 @@ body {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 768px) {
+  .donation__wrapper {
+    flex-direction: column;
+  }
+}
 
 .donation__content {
   width: 380px;
   margin-left: 30px;
+}
+@media (max-width: 768px) {
+  .donation__content {
+    order: -1;
+    margin-left: 0;
+    padding-bottom: 58px;
+  }
 }
 
 .donation__title {
@@ -643,7 +655,7 @@ body {
 
 .donation__button {
   margin-bottom: 20px;
-  padding: 10px 15px;
+  padding: 9px 15px;
   border-radius: 9px;
 }
 
