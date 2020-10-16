@@ -378,10 +378,23 @@ body {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 768px) {
+  .about__wrapper {
+    flex-direction: column;
+  }
+}
 
 .about__content {
-  width: 430px;
+  max-width: 430px;
   margin-left: 120px;
+}
+@media (max-width: 768px) {
+  .about__content {
+    order: -1;
+    max-width: 436px;
+    margin-left: 0;
+    padding-bottom: 80px;
+  }
 }
 
 .about__title {
