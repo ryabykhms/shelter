@@ -355,6 +355,9 @@ body {
 .menu__link--dark {
   color: #545454;
 }
+.menu__link--dark:hover {
+  color: #f1cdb3;
+}
 .menu__link--active-dark {
   color: #292929;
 }

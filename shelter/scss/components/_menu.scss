@@ -20,6 +20,9 @@
   }
   &--dark {
     color: $color-dark-l;
+    &:hover {
+      color: $color-primary;
+    }
   }
   &--active-dark {
     color: $color-dark-3xl;
