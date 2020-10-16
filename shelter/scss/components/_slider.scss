@@ -3,7 +3,13 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  @include media-tablet {
+   // Emulated flex gap
+  margin: -40px 0 0 -40px;
+  width: calc(100% + 40px);
+  > * {
+    margin: 40px 0 0 40px;
+  }
+  @include media-laptop {
     justify-content: center;
   }
 }
@@ -21,17 +27,8 @@
     background-color: $color-light-s;
   }
   @include media-tablet {
-    &:nth-child(2n) {
-      margin-left: 40px;
-    }
-    &:nth-child(n+7) {
+    &:nth-child(n + 7) {
       display: none;
-    }
-  }
-  @include media-mobile-big {
-    &:nth-child(2n) {
-      display: none;
-      margin-left: 0;
     }
   }
 }
