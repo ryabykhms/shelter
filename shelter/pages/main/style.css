@@ -333,9 +333,19 @@ body {
   align-self: flex-end;
   margin-left: 42px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .hero__image {
     height: auto;
+    max-height: 593px;
+  }
+}
+@media (max-width: 1024px) {
+  .hero__image {
+    max-height: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .hero__image {
     max-height: 593px;
   }
 }

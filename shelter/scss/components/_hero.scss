@@ -20,8 +20,17 @@
   height: 100%;
   align-self: flex-end;
   margin-left: 42px;
-  @include media-tablet {
+
+  @include media-laptop {
     height: auto;
+    max-height: 593px;
+  }
+
+  @include media-laptop-small {
+    max-height: 400px;
+  }
+
+  @include media-tablet {
     max-height: 593px;
   }
 }
