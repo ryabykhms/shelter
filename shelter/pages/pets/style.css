@@ -557,6 +557,9 @@ body:before {
     margin-top: 20px;
   }
 }
+.friends__button a {
+  color: #292929;
+}
 
 .slider {
   display: flex;

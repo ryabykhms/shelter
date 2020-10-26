@@ -518,6 +518,9 @@ body:before {
     align-self: center;
   }
 }
+.utp__button a {
+  color: #292929;
+}
 
 .about__wrapper {
   padding-top: 80px;
@@ -612,6 +615,9 @@ body:before {
   .friends__button {
     margin-top: 20px;
   }
+}
+.friends__button a {
+  color: #292929;
 }
 
 .slider {
