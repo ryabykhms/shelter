@@ -1,25 +1,26 @@
-@import "../base/normalize";
+@import '../base/normalize';
 
 // Abstract
-@import "../abstract/constants";
-@import "../abstract/placeholders";
-@import "../abstract/mixins";
+@import '../abstract/constants';
+@import '../abstract/placeholders';
+@import '../abstract/mixins';
 
 // Base
-@import "../base/base";
-@import "../base/logo";
-@import "../base/buttons";
+@import '../base/base';
+@import '../base/logo';
+@import '../base/buttons';
+@import '../base/modal';
 
 // Layouts
-@import "../layouts/wrapper";
+@import '../layouts/wrapper';
 
 // Components
-@import "../components/header";
-@import "../components/menu";
-@import "../components/hero";
-@import "../components/about";
-@import "../components/friends";
-@import "../components/slider";
-@import "../components/help";
-@import "../components/donation";
-@import "../components/footer";
+@import '../components/header';
+@import '../components/menu';
+@import '../components/hero';
+@import '../components/about';
+@import '../components/friends';
+@import '../components/slider';
+@import '../components/help';
+@import '../components/donation';
+@import '../components/footer';
