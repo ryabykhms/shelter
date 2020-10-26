@@ -25,6 +25,7 @@
         &:nth-child(n + 3) {
           display: none;
         }
+        margin-bottom: 10px;
       }
     }
   }
@@ -99,12 +100,23 @@
   @include media-tablet {
     margin-left: 0;
   }
+
+  @media (max-width: 750px) {
+    order: 1;
+    margin: 0;
+    margin-right: 20px;
+  }
 }
 
 .slider__next {
   // margin-right: 0;
   margin-left: 12px;
   // margin-top: 40px;
+  @media (max-width: 750px) {
+    order: 2;
+    margin: 0;
+    margin-right: -30px;
+  }
 }
 
 .pagination {

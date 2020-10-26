@@ -23,7 +23,7 @@
   margin: 0 auto;
   text-align: center;
   @include media-mobile-big {
-    letter-spacing: 0.15rem;;
+    letter-spacing: 0.15rem;
   }
 }
 
@@ -39,6 +39,8 @@
 
 .friends__button {
   margin: 0 auto;
+
+  @media (max-width: 750px) {
+    margin-top: 20px;
+  }
 }
-
-
