@@ -5,6 +5,24 @@ html {
 body {
   @extend %font-prime;
   @include font($size: 1.5rem, $height: 2.4rem);
+  &:before {
+    transition: all 0.5s ease;
+  }
+  @include media-tablet-small {
+    &.lock {
+      overflow: hidden;
+      &:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+      }
+    }
+  }
 }
 
 h2 {

@@ -4,6 +4,10 @@
   align-items: center;
   justify-content: space-between;
   height: 60px;
+  z-index: 1;
+  @include media-tablet-small {
+    margin-right: 40px;
+  }
 }
 
 .logo__title {

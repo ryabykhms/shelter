@@ -15,14 +15,22 @@
   <body class="body">
     <header class="header">
       <div class="wrapper header__wrapper">
-        <a class="logo" href="index.html">
-          <h1 class="logo__title">Cozy House</h1>
-          <p class="logo__subtitle">Shelter for pets in Boston</p>
-        </a>
+        <div class="header__main">
+          <a class="logo header__logo" href="index.html">
+            <h1 class="logo__title">Cozy House</h1>
+            <p class="logo__subtitle">Shelter for pets in Boston</p>
+          </a>
+          <div class="header__burger menu__burger">
+            <span></span>
+          </div>
+        </div>
+
         <nav class="header__menu">
           <ul class="menu">
             <li class="menu__item menu__item--active">
-              <a href="#" class="menu__link">About the shelter</a>
+              <a href="#" class="menu__link menu__link--active"
+                >About the shelter</a
+              >
             </li>
             <li class="menu__item">
               <a href="../pets/index.html" class="menu__link">Our pets</a>
@@ -323,6 +331,6 @@
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
