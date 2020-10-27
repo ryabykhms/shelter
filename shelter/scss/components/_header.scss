@@ -10,6 +10,11 @@
   &--fixed {
     position: fixed;
   }
+  &--sticky {
+    position: sticky;
+    top: 0;
+    background-color: $color-light-xl;
+  }
 }
 
 .header__wrapper {
