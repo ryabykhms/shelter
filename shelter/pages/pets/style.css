@@ -251,6 +251,7 @@ body:before {
   padding: 15px 43px;
   border: 2px solid #f1cdb3;
   border-radius: 100px;
+  transition: all 0.5s ease;
 }
 .button:hover {
   background-color: #fddcc4;
@@ -341,6 +342,8 @@ body:before {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 100;
+  transition: all 0.5s ease;
 }
 
 .modal {
@@ -351,6 +354,7 @@ body:before {
   min-height: 120px;
   max-height: 90%;
   overflow: auto;
+  transition: all 0.5s ease;
 }
 @media (max-width: 767px) {
   .modal {
@@ -358,19 +362,52 @@ body:before {
   }
 }
 
+.modal-wrapper {
+  position: relative;
+  width: 740px;
+  min-height: 120px;
+  max-height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .modal-wrapper {
+    width: 100%;
+  }
+}
+
 .modal__close-icon {
   position: absolute;
-  top: 30px;
-  right: 0;
-  background-color: transparent;
+  top: -50px;
+  right: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 2px solid #f1cdb3;
   padding: 0;
   width: 52px;
   height: 52px;
   border-radius: 50%;
+  transition: all 0.5s ease;
   cursor: pointer;
 }
 .modal__close-icon svg {
   pointer-events: none;
+}
+.modal__close-icon:hover {
+  background: #fddcc4;
+}
+@media (max-width: 767px) {
+  .modal__close-icon {
+    right: 5px;
+    top: -60px;
+  }
+}
+
+.modal__close-icon.hover {
+  background: #fddcc4;
 }
 
 .pet__wrapper {
@@ -447,7 +484,10 @@ body:before {
   align-items: baseline;
 }
 
-@media (max-width: 750px) {
+.pet__image {
+  margin-right: 10px;
+}
+@media (max-width: 767px) {
   .pet__image {
     display: none;
   }
@@ -585,6 +625,7 @@ body.lock .header__main {
 
 .menu__link {
   color: #cdcdcd;
+  transition: all 0.5s ease;
 }
 .menu__link:hover {
   color: #fafafa;

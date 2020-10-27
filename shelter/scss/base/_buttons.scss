@@ -4,6 +4,7 @@
   padding: 15px 43px;
   border: 2px solid $color-primary;
   border-radius: 100px;
+  transition: all 0.5s ease;
   &:hover {
     background-color: $color-primary-light;
     cursor: pointer;

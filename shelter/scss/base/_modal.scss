@@ -8,6 +8,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 100;
+  transition: all 0.5s ease;
 }
 
 .modal {
@@ -21,21 +23,51 @@
   @include media-tablet {
     width: 90%;
   }
+  transition: all 0.5s ease;
+}
+
+.modal-wrapper {
+  position: relative;
+  width: 740px;
+  min-height: 120px;
+  max-height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include media-tablet {
+    width: 100%;
+  }
 }
 
 .modal__close-icon {
   position: absolute;
-  top: 30px;
-  right: 0;
-  background-color: transparent;
+  top: -50px;
+  right: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 2px solid $color-primary;
   padding: 0;
   width: 52px;
   height: 52px;
   border-radius: 50%;
+  transition: all 0.5s ease;
   cursor: pointer;
   svg {
     pointer-events: none;
   }
+  &:hover {
+    background: #fddcc4;
+  }
+  @include media-tablet {
+    right: 5px;
+    top: -60px;
+  }
+}
+
+.modal__close-icon.hover {
+  background: #fddcc4;
 }
 
 .pet__wrapper {
@@ -112,7 +144,8 @@
 }
 
 .pet__image {
-  @media (max-width: 750px) {
+  margin-right: 10px;
+  @include media-tablet {
     display: none;
   }
 }
