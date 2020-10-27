@@ -39,11 +39,8 @@
 
 .friends__button {
   margin: 0 auto;
-
+  color: $color-dark-3xl;
   @media (max-width: 750px) {
     margin-top: 20px;
-  }
-  a {
-    color: $color-dark-3xl;
   }
 }

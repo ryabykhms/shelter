@@ -60,10 +60,8 @@
 
 .utp__button {
   margin-top: 42px;
+  color: $color-dark-3xl;
   @include media-tablet {
     align-self: center;
-  }
-  a {
-    color: $color-dark-3xl;
   }
 }

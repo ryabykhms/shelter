@@ -638,14 +638,12 @@ body:before {
 
 .utp__button {
   margin-top: 42px;
+  color: #292929;
 }
 @media (max-width: 768px) {
   .utp__button {
     align-self: center;
   }
-}
-.utp__button a {
-  color: #292929;
 }
 
 .about__wrapper {
@@ -736,14 +734,12 @@ body:before {
 
 .friends__button {
   margin: 0 auto;
+  color: #292929;
 }
 @media (max-width: 750px) {
   .friends__button {
     margin-top: 20px;
   }
-}
-.friends__button a {
-  color: #292929;
 }
 
 .slider {
