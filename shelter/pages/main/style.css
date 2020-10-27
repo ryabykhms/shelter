@@ -182,11 +182,11 @@ body:before {
   body.lock:before {
     content: "";
     width: 100%;
-    height: auto;
+    height: 100%;
     top: 0;
     left: 0;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
     z-index: 1;
   }
 }
@@ -299,7 +299,7 @@ body:before {
   max-height: 90%;
   overflow: auto;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .modal {
     width: 90%;
   }
@@ -406,7 +406,7 @@ body:before {
   max-width: 1200px;
   margin: auto;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .wrapper {
     max-width: 708px;
   }
@@ -449,8 +449,12 @@ body:before {
 
 .header__main {
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: flex-start;
+  z-index: 1;
+  transition: all 0.5s ease;
+  left: 0;
 }
 
 .header__menu {
@@ -462,7 +466,7 @@ body:before {
     position: fixed;
     top: 0;
     right: -100%;
-    width: 90%;
+    width: 320px;
     height: 100%;
     background-color: #292929;
     padding: 30px 10px 20px 10px;
@@ -475,15 +479,32 @@ body:before {
     margin-bottom: 40px;
   }
   .header__menu--light {
-    background-color: #fafafa;
+    background-color: #fff;
   }
 }
 .header__menu.active {
   right: 0;
+  padding-top: 200px;
 }
 @media (max-width: 320px) {
   .header__menu {
     width: 100%;
+  }
+}
+
+body.lock .header__main {
+  position: absolute;
+  top: 30px;
+  left: calc(100% - 310px);
+}
+@media (max-width: 320px) {
+  body.lock .header__main {
+    left: calc(100% - 300px);
+  }
+}
+@media (max-width: 300px) {
+  body.lock .header__main {
+    left: calc(100% - 270px);
   }
 }
 
@@ -587,7 +608,7 @@ body:before {
   margin-top: 180px;
   justify-content: flex-start;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .hero__wrapper {
     flex-direction: column;
     margin-top: 150px;
@@ -611,7 +632,7 @@ body:before {
     max-height: 400px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .hero__image {
     max-height: 593px;
     width: 100%;
@@ -625,7 +646,7 @@ body:before {
   max-width: 460px;
   padding-bottom: 80px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .utp {
     padding-bottom: 100px;
   }
@@ -645,7 +666,7 @@ body:before {
   margin-top: 42px;
   color: #292929;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .utp__button {
     align-self: center;
   }
@@ -657,7 +678,7 @@ body:before {
   align-items: center;
   justify-content: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .about__wrapper {
     flex-direction: column;
   }
@@ -667,7 +688,7 @@ body:before {
   max-width: 430px;
   margin-left: 120px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .about__content {
     order: -1;
     max-width: 436px;
@@ -685,7 +706,7 @@ body:before {
   color: #4c4c4c;
   margin-top: 25px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .about__paragraph {
     text-align: justify;
   }
@@ -703,7 +724,7 @@ body:before {
   flex-direction: column;
   align-items: stretch;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .friends__wrapper {
     padding-bottom: 76px;
   }
@@ -731,7 +752,7 @@ body:before {
 .friends__slider {
   margin-top: 60px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .friends__slider {
     margin-top: 30px;
   }
@@ -785,7 +806,7 @@ body:before {
     display: none;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .slides .slider__item {
     margin-top: 100px;
     margin-bottom: 60px;
@@ -820,7 +841,7 @@ body:before {
   background-color: #fafafa;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .slider__item:nth-child(n+7) {
     display: none;
   }
@@ -829,7 +850,7 @@ body:before {
 .slider__list {
   padding-bottom: 30px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .slider__list {
     padding-bottom: 10px;
   }
@@ -862,7 +883,7 @@ body:before {
 .slider__prev {
   margin-right: 12px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .slider__prev {
     margin-left: 0;
   }
@@ -993,7 +1014,7 @@ body:before {
   line-height: 18px;
   color: #b2b2b2;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .donation__description {
     text-align: justify;
   }

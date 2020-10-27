@@ -9,24 +9,24 @@ burger.addEventListener('click', (e) => {
   burger.classList.toggle('active');
   menu.classList.toggle('active');
   body.classList.toggle('lock');
-  if (burger.classList.contains('active')) {
-    menu.prepend(headerMain);
-  } else {
-    headerWrapper.prepend(headerMain);
-  }
+  // if (burger.classList.contains('active')) {
+  //   menu.prepend(headerMain);
+  // } else {
+  //   headerWrapper.prepend(headerMain);
+  // }
 });
 
 document.addEventListener('click', function (e) {
   const target = e.target;
   const isMenu = target == menu || menu.contains(target);
-  const isBurger = target == burger;
+  const isBurger = target.closest('.header__burger') == burger;
   const isMenuActive = menu.classList.contains('active');
 
   if (!isMenu && !isBurger && isMenuActive) {
     burger.classList.toggle('active');
     menu.classList.toggle('active');
     body.classList.toggle('lock');
-    headerWrapper.prepend(headerMain);
+    // headerWrapper.prepend(headerMain);
   }
 });
 

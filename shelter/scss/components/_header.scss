@@ -28,8 +28,12 @@
 
 .header__main {
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: flex-start;
+  z-index: 1;
+  transition: all 0.5s ease;
+  left: 0;
 }
 
 .header__menu {
@@ -39,7 +43,7 @@
     position: fixed;
     top: 0;
     right: -100%;
-    width: 90%;
+    width: 320px;
     height: 100%;
     background-color: $color-dark-3xl;
     padding: 30px 10px 20px 10px;
@@ -51,14 +55,27 @@
       margin-bottom: 40px;
     }
     &--light {
-      background-color: $color-light-s;
+      background-color: $color-light-xl;
     }
   }
   &.active {
     right: 0;
+    padding-top: 200px;
   }
 
   @include media-mobile {
     width: 100%;
+  }
+}
+
+body.lock .header__main {
+  position: absolute;
+  top: 30px;
+  left: calc(100% - 310px);
+  @include media-mobile {
+    left: calc(100% - 300px);
+  }
+  @media (max-width: 300px) {
+    left: calc(100% - 270px);
   }
 }
