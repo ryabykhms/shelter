@@ -270,6 +270,9 @@ body:before {
   border-color: #cdcdcd;
   color: #cdcdcd;
 }
+.button--inactive:hover {
+  background-color: transparent;
+}
 
 .button__image {
   vertical-align: middle;

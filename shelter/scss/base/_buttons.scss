@@ -22,6 +22,9 @@
   &--inactive {
     border-color: $color-dark-s;
     color: $color-dark-s;
+    &:hover {
+      background-color: transparent;
+    }
   }
 }
 
