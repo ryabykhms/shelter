@@ -5,18 +5,24 @@
 .donation__wrapper {
   @include content-wrapper();
   // padding-top: 82px;
-  @include media-tablet {
+  @media (max-width: 890px) {
     flex-direction: column;
   }
 }
 
 .donation__content {
+  display: flex;
+  flex-direction: column;
   max-width: 380px;
   margin-left: 30px;
-  @include media-tablet {
+  @media (max-width: 890px) {
     order: -1;
     margin-left: 0;
     padding-bottom: 59px;
+  }
+  @include media-mobile-big {
+    align-items: center;
+    text-align: center;
   }
 }
 
@@ -42,13 +48,23 @@
   font-size: 12px;
   line-height: 18px;
   color: $color-dark-m;
+  @include media-mobile-big {
+    text-align: left;
+  }
 }
 
 .donation__image {
   width: 100%;
 }
 
+.bank-requisites {
+  text-align: left;
+}
+
 .bank-requisites__text {
   @extend %font-h4;
   margin-left: 11px;
+  @include media-mobile-big {
+    font-size: 1.5rem;
+  }
 }

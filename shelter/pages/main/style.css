@@ -934,21 +934,29 @@ body:before {
   align-items: center;
   justify-content: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 890px) {
   .donation__wrapper {
     flex-direction: column;
   }
 }
 
 .donation__content {
+  display: flex;
+  flex-direction: column;
   max-width: 380px;
   margin-left: 30px;
 }
-@media (max-width: 768px) {
+@media (max-width: 890px) {
   .donation__content {
     order: -1;
     margin-left: 0;
     padding-bottom: 59px;
+  }
+}
+@media (max-width: 414px) {
+  .donation__content {
+    align-items: center;
+    text-align: center;
   }
 }
 
@@ -975,13 +983,27 @@ body:before {
   line-height: 18px;
   color: #b2b2b2;
 }
+@media (max-width: 414px) {
+  .donation__description {
+    text-align: left;
+  }
+}
 
 .donation__image {
   width: 100%;
 }
 
+.bank-requisites {
+  text-align: left;
+}
+
 .bank-requisites__text {
   margin-left: 11px;
+}
+@media (max-width: 414px) {
+  .bank-requisites__text {
+    font-size: 1.5rem;
+  }
 }
 
 .footer {
