@@ -809,6 +809,7 @@ body:before {
 .slider__item:hover {
   cursor: pointer;
   background-color: #fafafa;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
 }
 @media (max-width: 768px) {
   .slider__item:nth-child(n+7) {
