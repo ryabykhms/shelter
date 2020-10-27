@@ -962,6 +962,7 @@ body:before {
 @media (max-width: 700px) {
   .contacts__item {
     width: 100%;
+    align-items: center;
   }
   .contacts__item:not(:first-child) {
     margin-top: 24px;
@@ -978,7 +979,6 @@ body:before {
 }
 @media (max-width: 700px) {
   .location__link {
-    margin-left: -10px;
     width: 300px;
   }
 }
@@ -992,11 +992,15 @@ body:before {
 .footer__location {
   margin-left: -25px;
 }
+@media (max-width: 700px) {
+  .footer__location {
+    margin-left: 0;
+  }
+}
 
 .link {
   display: flex;
   align-items: center;
-  justify-content: baseline;
 }
 
 .link:hover {

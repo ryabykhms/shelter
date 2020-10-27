@@ -24,4 +24,7 @@
 .about__paragraph {
   color: $color-dark-xl;
   margin-top: 25px;
+  @include media-tablet {
+    text-align: justify;
+  }
 }

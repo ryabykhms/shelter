@@ -48,8 +48,8 @@
   font-size: 12px;
   line-height: 18px;
   color: $color-dark-m;
-  @include media-mobile-big {
-    text-align: left;
+  @include media-tablet {
+    text-align: justify;
   }
 }
 

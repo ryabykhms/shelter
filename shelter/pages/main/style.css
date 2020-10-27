@@ -685,6 +685,11 @@ body:before {
   color: #4c4c4c;
   margin-top: 25px;
 }
+@media (max-width: 768px) {
+  .about__paragraph {
+    text-align: justify;
+  }
+}
 
 .friends {
   background-color: #f6f6f6;
@@ -988,9 +993,9 @@ body:before {
   line-height: 18px;
   color: #b2b2b2;
 }
-@media (max-width: 414px) {
+@media (max-width: 768px) {
   .donation__description {
-    text-align: left;
+    text-align: justify;
   }
 }
 
@@ -1135,6 +1140,7 @@ body:before {
 @media (max-width: 700px) {
   .contacts__item {
     width: 100%;
+    align-items: center;
   }
   .contacts__item:not(:first-child) {
     margin-top: 24px;
@@ -1151,7 +1157,6 @@ body:before {
 }
 @media (max-width: 700px) {
   .location__link {
-    margin-left: -10px;
     width: 300px;
   }
 }
@@ -1165,11 +1170,15 @@ body:before {
 .footer__location {
   margin-left: -25px;
 }
+@media (max-width: 700px) {
+  .footer__location {
+    margin-left: 0;
+  }
+}
 
 .link {
   display: flex;
   align-items: center;
-  justify-content: baseline;
 }
 
 .link:hover {

@@ -44,7 +44,6 @@
 .pets__image {
   width: auto;
   max-height: 100%;
-
 }
 
 .footer__title {
@@ -100,6 +99,7 @@
   }
   @include media-tablet-small {
     width: 100%;
+    align-items: center;
     &:not(:first-child) {
       margin-top: 24px;
       margin-left: -9px;
@@ -114,7 +114,6 @@
 .location__link {
   margin-top: 33px;
   @include media-tablet-small {
-    margin-left: -10px;
     width: 300px;
   }
 }
@@ -127,13 +126,15 @@
 
 .footer__location {
   margin-left: -25px;
+  @include media-tablet-small {
+    margin-left: 0;
+  }
 }
 
 .link {
   @extend %font-h4;
   display: flex;
   align-items: center;
-  justify-content: baseline;
 }
 
 .link:hover {
