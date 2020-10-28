@@ -140,43 +140,6 @@ const pets = [
   },
 ];
 
-// Render Cards
-const windowWidth = window.screen.width;
-const getSlideHtml = (data) => {
-  const id = data.id;
-  const name = data.name;
-  const imgUrl = data.img;
-  const template = `<div class="slider__item" data-id="${id}">
-  <img
-    src="${imgUrl}"
-    alt="${name}"
-    class="slider__image"
-  />
-  <h4 class="slider__title">${name}</h4>
-  <div class="slider__button button">Learn more</div>
-</div>`;
-  return template;
-};
-
-const renderSlidesByScreenWidth = (data, width) => {
-  const container = document.querySelector('.slides');
-  let countObjects = 0;
-  if (width > 1024) {
-    countObjects = 3;
-  } else if (width > 768) {
-    countObjects = 2;
-  } else {
-    countObjects = 1;
-  }
-  for (let i = 0; i < data.length && i < countObjects; i++) {
-    const petObject = data[i];
-    const petHtml = getSlideHtml(petObject);
-    container.insertAdjacentHTML('beforeend', petHtml);
-  }
-};
-
-renderSlidesByScreenWidth(pets, windowWidth);
-
 // Popup
 class Modal {
   constructor(classes) {
@@ -356,4 +319,149 @@ document.querySelectorAll('.slider__item').forEach((slide) => {
     let modal = new Modal('slide-modal');
     modal.buildModal(modalContent);
   });
+});
+
+// Slider
+
+const getSlideHtml = (data) => {
+  const id = data.id;
+  const name = data.name;
+  const imgUrl = data.img;
+  const petDomObject = document.createElement('div');
+  petDomObject.classList.add('slider__item');
+  petDomObject.setAttribute('data-id', id);
+  const template = `
+  <img
+    src="${imgUrl}"
+    alt="${name}"
+    class="slider__image"
+  />
+  <h4 class="slider__title">${name}</h4>
+  <div class="slider__button button">Learn more</div>
+`;
+  petDomObject.innerHTML = template;
+
+  //   const template = `<div class="slider__item" data-id="${id}">
+  //   <img
+  //     src="${imgUrl}"
+  //     alt="${name}"
+  //     class="slider__image"
+  //   />
+  //   <h4 class="slider__title">${name}</h4>
+  //   <div class="slider__button button">Learn more</div>
+  // </div>`;
+  return petDomObject;
+};
+
+const renderSlidesByScreenWidth = (data, width) => {
+  const container = document.querySelector('.slides');
+  let countObjects = 0;
+  if (width > 1024) {
+    countObjects = 3;
+  } else if (width > 768) {
+    countObjects = 2;
+  } else {
+    countObjects = 1;
+  }
+  for (let i = 0; i < data.length && i < countObjects; i++) {
+    const petObject = data[i];
+    const petHtml = getSlideHtml(petObject);
+    container.insertAdjacentHTML('beforeend', petHtml);
+  }
+};
+
+const sliderContainer = document.querySelector('.slides');
+const sliderItem = document.querySelector('.slider__item');
+const prevSlideBtn = document.querySelector('.slider__prev');
+const nextSlideBtn = document.querySelector('.slider__next');
+let prevIndexes = [];
+
+const getSlidesPerPage = () => {
+  const windowWidth = window.innerWidth;
+  let slidesPerPage = 0;
+  if (windowWidth > 1024) {
+    slidesPerPage = 3;
+  } else if (windowWidth >= 768) {
+    slidesPerPage = 2;
+  } else {
+    slidesPerPage = 1;
+  }
+  return slidesPerPage;
+};
+
+const getNextData = (data, prevIndexes, size) => {
+  const result = [];
+  const currentIndexes = [];
+  while (result.length < size) {
+    const id = Math.trunc(Math.random() * data.length);
+    if (!prevIndexes.includes(id) && !currentIndexes.includes(id)) {
+      result.push(data[id]);
+      currentIndexes.push(id);
+    }
+  }
+  return { result, currentIndexes };
+};
+
+const renderSlides = (data) => {
+  const container = document.querySelector('.slides');
+  const slides = document.querySelectorAll('.slider__item');
+  if (slides.length === 0) {
+    for (let i = 0; i < data.length; i++) {
+      const pet = data[i];
+      const petDom = getSlideHtml(pet);
+      container.insertAdjacentHTML('beforeend', petDom.outerHTML);
+    }
+  }
+  slides.forEach((slide, id) => {
+    const petObject = data[id];
+    const petDomObject = getSlideHtml(petObject);
+    petDomObject.opacity = 0;
+    slide.remove();
+    container.insertAdjacentHTML('beforeend', petDomObject.outerHTML);
+  });
+};
+
+// init slides
+const initSlides = () => {
+  const slidesPerPage = getSlidesPerPage();
+  let slidesCount = pets.length;
+  const pages = Math.round(slidesCount / slidesPerPage);
+  const { result, currentIndexes } = getNextData(
+    pets,
+    prevIndexes,
+    slidesPerPage
+  );
+  prevIndexes = currentIndexes;
+  renderSlides(result);
+};
+
+initSlides();
+
+nextSlideBtn.addEventListener('click', (e) => {
+  const slidesPerPage = getSlidesPerPage();
+  let slidesCount = pets.length;
+  const pages = Math.round(slidesCount / slidesPerPage);
+
+  const { result, currentIndexes } = getNextData(
+    pets,
+    prevIndexes,
+    slidesPerPage
+  );
+  prevIndexes = currentIndexes;
+
+  renderSlides(result);
+});
+
+prevSlideBtn.addEventListener('click', (e) => {
+  const slidesPerPage = getSlidesPerPage();
+  let slidesCount = pets.length;
+  const pages = Math.round(slidesCount / slidesPerPage);
+  const { result, currentIndexes } = getNextData(
+    pets,
+    prevIndexes,
+    slidesPerPage
+  );
+  prevIndexes = currentIndexes;
+
+  renderSlides(result);
 });

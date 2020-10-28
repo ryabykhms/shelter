@@ -758,11 +758,17 @@ body.lock .header__main {
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
+  transition: all 0.5s ease;
+  overflow: hidden;
 }
 @media (max-width: 1200px) {
   .slider {
     justify-content: center;
   }
+}
+
+.friends__slider {
+  overflow: hidden;
 }
 
 .slides {
@@ -898,6 +904,27 @@ body.lock .header__main {
   .pagination__button:not(:first-child) {
     margin-left: 10px;
   }
+}
+
+.pages-buttons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.pagination__page {
+  margin-left: 20px;
+}
+@media (max-width: 414px) {
+  .pagination__page {
+    margin-left: 10px;
+  }
+}
+
+.skipped {
+  display: block;
+  align-self: flex-end;
+  margin-left: 10px;
 }
 
 .footer {

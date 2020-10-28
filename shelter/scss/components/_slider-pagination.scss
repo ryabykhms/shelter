@@ -4,9 +4,15 @@
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
+  transition: all 0.5s ease;
+  overflow: hidden;
   @include media-laptop {
     justify-content: center;
   }
+}
+
+.friends__slider {
+  overflow: hidden;
 }
 
 .slides {
@@ -16,7 +22,6 @@
   flex-wrap: wrap;
   // Emulated flex gap
   margin: -40px 0 0 -40px;
-  overflow: hidden;
   > * {
     margin: 40px 0 0 40px;
   }
@@ -66,7 +71,6 @@
   background-color: $color-light-s;
   padding-bottom: 30px;
   margin-bottom: 30px;
-  transition: all 0.5s ease;
   &:hover {
     cursor: pointer;
     background-color: $color-light-s;
@@ -144,4 +148,23 @@
       margin-left: 10px;
     }
   }
+}
+
+.pages-buttons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.pagination__page {
+  margin-left: 20px;
+  @include media-mobile-big {
+    margin-left: 10px;
+  }
+}
+
+.skipped {
+  display: block;
+  align-self: flex-end;
+  margin-left: 10px;
 }
