@@ -310,17 +310,6 @@ const getPetInfoHtml = (petInfo) => {
   return template;
 };
 
-document.querySelectorAll('.slider__item').forEach((slide) => {
-  slide.addEventListener('click', (e) => {
-    const sliderItem = e.target.closest('.slider__item');
-    const id = sliderItem.getAttribute('data-id');
-    const petInfo = pets[id - 1];
-    const modalContent = getPetInfoHtml(petInfo);
-    let modal = new Modal('slide-modal');
-    modal.buildModal(modalContent);
-  });
-});
-
 // Slider
 
 const getSlideHtml = (data) => {
@@ -418,6 +407,16 @@ const renderSlides = (data) => {
     petDomObject.opacity = 0;
     slide.remove();
     container.insertAdjacentHTML('beforeend', petDomObject.outerHTML);
+  });
+  document.querySelectorAll('.slider__item').forEach((slide) => {
+    slide.addEventListener('click', (e) => {
+      const sliderItem = e.target.closest('.slider__item');
+      const id = sliderItem.getAttribute('data-id');
+      const petInfo = pets[id - 1];
+      const modalContent = getPetInfoHtml(petInfo);
+      let modal = new Modal('slide-modal');
+      modal.buildModal(modalContent);
+    });
   });
 };
 
