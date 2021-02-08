@@ -1,0 +1,58 @@
+@import "mixins.scss";
+
+%font-prime {
+  font-family: "Georgia", Verdana, sans-serif;
+}
+
+%font-add {
+  font-family: "Arial", Verdana, sans-serif;
+}
+
+%font-h2 {
+  @include font($size: 4.4rem, $height: 5.7rem);
+}
+
+%font-h3 {
+  @include font($size: 3.5rem, $height: 4.5rem);
+  letter-spacing: 0.21rem;
+  color: $color-dark-l;
+}
+
+%font-h4 {
+  @include font($size: 2rem, $height: 2.3rem);
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+
+%font-h5 {
+  @include font($size: 1.5rem, $height: 1.65rem);
+  letter-spacing: 0.1rem;
+  color: $color-dark-l;
+}
+
+%font-paragraph-l {
+  @extend %font-add;
+  @include font($size: 1.5rem, $height: 2.4rem);
+}
+
+%font-paragraph-s {
+  @extend %font-add;
+  @include font($size: 1.2rem, $height: 1.8rem, $style: italic);
+}
+
+%font-logo-title {
+  @include font($size: 3.2rem, $height: 3.8rem);
+  letter-spacing: 0.2rem;
+}
+
+%font-logo-subtitle {
+  @extend %font-add;
+  @include font($size: 1.3rem, $height: 1.3rem);
+  letter-spacing: 0.13rem;
+}
+
+%font-btn {
+  @extend %font-prime;
+  @include font($size: 1.7rem, $height: 1.8rem);
+  letter-spacing: 0.1rem;
+}

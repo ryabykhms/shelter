@@ -1,0 +1,64 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  @extend %font-prime;
+  @include font($size: 1.5rem, $height: 2.4rem);
+  &:before {
+    transition: all 0.5s ease;
+  }
+  @include media-tablet-small {
+    &.lock {
+      overflow: hidden;
+      &:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+      }
+    }
+  }
+}
+
+h2 {
+  @extend %font-h2;
+}
+
+h3 {
+  @extend %font-h3;
+  @include media-mobile-big {
+    @include font($size: 2.5rem, $height: 3.2rem);
+  }
+}
+
+h4 {
+  @extend %font-h4;
+}
+
+h5 {
+  @extend %font-h5;
+}
+
+p {
+  @extend %font-paragraph-l;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.clearfix {
+  display: none;
+  margin: 0;
+  @media (max-width: 750px) {
+    display: block;
+    flex-basis: 100%;
+    height: 0;
+  }
+}

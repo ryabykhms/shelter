@@ -1,0 +1,46 @@
+.friends {
+  background-color: $color-light-l;
+}
+
+.friends__wrapper {
+  @include content-wrapper();
+  flex-direction: column;
+  align-items: stretch;
+  @include media-tablet {
+    padding-bottom: 76px;
+  }
+  @include media-mobile-big {
+    padding-top: 42px;
+    padding-bottom: 44px;
+  }
+
+  &--simple {
+    padding-bottom: 100px;
+  }
+}
+
+.friends__title {
+  margin: 0 auto;
+  text-align: center;
+  @include media-mobile-big {
+    letter-spacing: 0.15rem;
+  }
+}
+
+.friends__slider {
+  margin-top: 60px;
+  @include media-tablet {
+    margin-top: 30px;
+  }
+  @include media-mobile-big {
+    margin-top: 42px;
+  }
+}
+
+.friends__button {
+  margin: 0 auto;
+  color: $color-dark-3xl;
+  @media (max-width: 750px) {
+    margin-top: 20px;
+  }
+}

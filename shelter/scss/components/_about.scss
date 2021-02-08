@@ -1,0 +1,30 @@
+.about__wrapper {
+  @include content-wrapper();
+  @include media-tablet {
+    flex-direction: column;
+  }
+}
+
+.about__content {
+  max-width: 430px;
+  margin-left: 120px;
+  @include media-tablet {
+    order: -1;
+    max-width: 436px;
+    margin-left: 0;
+    padding-bottom: 80px;
+  }
+}
+
+.about__title {
+  width: 80%;
+  color: $color-dark-l;
+}
+
+.about__paragraph {
+  color: $color-dark-xl;
+  margin-top: 25px;
+  @include media-tablet {
+    text-align: justify;
+  }
+}

@@ -1,0 +1,14 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  @include media-tablet {
+    max-width: 708px;
+    // padding: 0 21px;
+  }
+  @include media-mobile {
+    max-width: 300px;
+    // padding: 0 21px;
+  }
+}

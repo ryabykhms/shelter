@@ -1,0 +1,147 @@
+.slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  @include media-laptop {
+    justify-content: center;
+  }
+}
+
+.slides {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  // Emulated flex gap
+  margin: -40px 0 0 -40px;
+  overflow: hidden;
+  > * {
+    margin: 40px 0 0 40px;
+  }
+  @include media-laptop {
+    justify-content: center;
+  }
+  & .slider__item {
+    @include media-laptop-small {
+      &:nth-child(n + 3) {
+        display: none;
+      }
+    }
+    @include media-tablet {
+      margin-top: 100px;
+      margin-bottom: 60px;
+    }
+    @media (max-width: 750px) {
+      &:nth-child(n + 2) {
+        display: none;
+      }
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.slider-simple {
+  .slider__item {
+    @include media-laptop-small {
+      &:nth-child(n + 4) {
+        display: none;
+      }
+    }
+
+    // @include media-tablet {
+    //   &:nth-child(n + 3) {
+    //     display: none;
+    //   }
+    // }
+  }
+}
+
+.slider__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $color-light-s;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  transition: all 0.5s ease;
+  &:hover {
+    cursor: pointer;
+    background-color: $color-light-s;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+  }
+
+  @include media-tablet {
+    &:nth-child(n + 7) {
+      display: none;
+    }
+  }
+}
+
+.slider__list {
+  padding-bottom: 30px;
+  @include media-tablet {
+    padding-bottom: 10px;
+  }
+}
+
+.slider__title {
+  @include font($size: 2rem, $height: 2.3rem);
+  color: $color-dark-l;
+  letter-spacing: 0.11rem;
+  margin: 30px auto;
+}
+
+.slide__title {
+  @include font($size: 2rem, $height: 2.3rem);
+  color: $color-dark-l;
+  letter-spacing: 0.11rem;
+  margin: 30px auto;
+}
+
+.slider__button {
+  padding: 15px 42px;
+}
+
+.slider__prev {
+  // margin-right: -37px;
+  margin-right: 12px;
+  // margin-left: 0;
+  // margin-top: 40px;
+  @include media-tablet {
+    margin-left: 0;
+  }
+
+  @media (max-width: 750px) {
+    order: 1;
+    margin: 0;
+    margin-right: 20px;
+  }
+}
+
+.slider__next {
+  // margin-right: 0;
+  margin-left: 12px;
+  // margin-top: 40px;
+  @media (max-width: 750px) {
+    order: 2;
+    margin: 0;
+  }
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination__button {
+  &:not(:first-child) {
+    margin-left: 20px;
+    @include media-mobile-big {
+      margin-left: 10px;
+    }
+  }
+}
